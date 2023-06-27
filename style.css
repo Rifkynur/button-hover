@@ -23,6 +23,8 @@ body {
   position: relative;
   z-index: 1;
   transition: 1s;
+  display: block;
+  overflow: hidden;
 }
 .button a::after {
   content: "";
@@ -208,7 +210,7 @@ body {
 .button8 a:hover::after {
   transform: translateX(-15px);
 }
-.button9 button {
+.button9 a {
   background-color: #000;
   text-decoration: none;
   padding: 15px 20px;
@@ -221,7 +223,7 @@ body {
   z-index: 1;
   cursor: pointer;
 }
-.button9 button::before {
+.button9 a::before {
   content: "";
   position: absolute;
   background-color: #0d6efd;
@@ -234,6 +236,52 @@ body {
   z-index: -1;
   transition: 1s ease;
 }
-.button9 button:hover::before {
+.button9 a:hover::before {
   height: 0;
+}
+.button10 a::before {
+  content: "";
+  position: absolute;
+  background-color: #000;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 0;
+  transform: translate(-50%, -50%);
+  transition: 1s ease;
+}
+.button10 a:hover::before {
+  height: 100%;
+}
+.button11 a::before {
+  content: "";
+  position: absolute;
+  background-color: #000;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 0;
+  transform: translate(-50%, -50%) rotate(45deg);
+  transition: 1s ease;
+}
+
+.button11 a:hover::before {
+  height: 350%;
+}
+.button12 a::before {
+  content: "";
+  position: absolute;
+  background-color: #000;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 0;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  transition: 1s ease;
+}
+.button12 a:hover::before {
+  height: 360%;
 }
