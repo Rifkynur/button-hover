@@ -219,6 +219,7 @@ body {
   overflow: hidden;
   border: none;
   z-index: 1;
+  cursor: pointer;
 }
 .button9 button::before {
   content: "";
