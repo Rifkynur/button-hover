@@ -1,0 +1,238 @@
+body {
+  background-color: #001c30;
+}
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  padding: 50px;
+}
+.container .btn {
+  margin-bottom: 50px;
+}
+.btn a {
+  background-color: #0d6efd;
+  text-decoration: none;
+  padding: 15px 20px;
+  text-transform: capitalize;
+  border-radius: 10px;
+  color: white;
+  position: relative;
+  z-index: 1;
+  transition: 1s;
+}
+.button a::after {
+  content: "";
+  width: 0;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border-radius: 10px;
+  position: absolute;
+  background-color: #000;
+  z-index: -1;
+  transition: 1s;
+}
+.button a:hover::after {
+  width: 100%;
+  height: 100%;
+}
+.button1 a::after {
+  content: "";
+  width: 0;
+  height: 100%;
+  top: 0;
+  right: 0;
+  border-radius: 10px;
+  position: absolute;
+  background-color: #000;
+  z-index: -1;
+  transition: 1s;
+}
+
+.button1 a:hover::after {
+  width: 100%;
+  height: 100%;
+}
+.button2 a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 0;
+  background-color: #000;
+  z-index: -1;
+  transition: 1s ease;
+  left: 0;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.button2 a:hover::before {
+  height: 100%;
+}
+.button3 a::before {
+  content: "";
+  background-color: #000;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-radius: 10px;
+  z-index: -1;
+  width: 100%;
+  height: 0;
+  transition: 1s ease;
+}
+.button3 a:hover::before {
+  height: 100%;
+}
+.button4 a::before {
+  content: "";
+  height: 50%;
+  width: 0;
+  top: 0;
+  right: 0;
+  background-color: #000;
+  position: absolute;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  z-index: -1;
+  transition: 1s ease;
+}
+.button4 a::after {
+  content: "";
+  height: 50%;
+  width: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #000;
+  position: absolute;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  z-index: -1;
+  transition: 1s ease;
+}
+
+.button4 a:hover::after,
+.button4 a:hover::before {
+  height: 50%;
+  width: 100%;
+}
+.button5 a::before {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  background-color: #000;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  transition: 1s ease;
+}
+.button5 a::after {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 0;
+  top: 0;
+  right: 0;
+  background-color: #000;
+  z-index: -1;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  transition: 1s ease;
+}
+.button5 a:hover::before,
+.button5 a:hover::after {
+  height: 100%;
+}
+.button6 a:hover {
+  background-color: #64ccc5;
+  color: #000;
+  box-shadow: 0 0 5px #64ccc5, 0 0 10px #64ccc5, 0 0 15px #64ccc5, 0 0 20px #64ccc5, 0 0 25px #64ccc5;
+}
+.button7 a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 10px;
+  background-color: #000;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  transform: scaleX(0);
+  transition: 1s ease;
+}
+.button7 a:hover::before {
+  transform: scalex(1);
+}
+.button8 a {
+  border: 2px solid white;
+}
+.button8 a::before {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 10px;
+  background-color: #0d6efd;
+  border: 2px solid white;
+  top: -5px;
+  left: 5px;
+  border-radius: 2px;
+  transition: 1s ease;
+}
+.button8 a::after {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 10px;
+  background-color: #0d6efd;
+  border: 2px solid white;
+  bottom: -5px;
+  right: 5px;
+  border-radius: 2px;
+  transition: 1s ease;
+}
+.button8 a:hover,
+.button8 a:hover::before,
+.button8 a:hover::after {
+  background-color: #000;
+  box-shadow: 0 0 5px #64ccc5, 0 0 10px #64ccc5, 0 0 15px #64ccc5, 0 0 20px #64ccc5;
+  transform: translatex(15px);
+}
+.button8 a:hover::after {
+  transform: translateX(-15px);
+}
+.button9 button {
+  background-color: #000;
+  text-decoration: none;
+  padding: 15px 20px;
+  text-transform: capitalize;
+  border-radius: 10px;
+  color: white;
+  position: relative;
+  overflow: hidden;
+  border: none;
+  z-index: 1;
+}
+.button9 button::before {
+  content: "";
+  position: absolute;
+  background-color: #0d6efd;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 180%;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  z-index: -1;
+  transition: 1s ease;
+}
+.button9 button:hover::before {
+  height: 0;
+}
